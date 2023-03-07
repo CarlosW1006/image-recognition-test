@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+</head>
+<body onload="init()">
+
+    <input type="file" id="input">
+    <input type="submit" onclick="submit()"><br>
+
+    <p>預覽: </p>
+    <div id="showImage"></div>
+    <p>預測結果1: <span id="1stIndex"></span></p>
+    <p>預測結果2: <span id="2ndIndex"></span></p>
+    <p>預測結果3: <span id="3rdIndex"></span></p>
+    <p>各類別預測值: <span id="eachValue"></span></p>
+    
+    <!-- Include TF.js in HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
+    <!-- Include index.js, which defines our own functions -->
+    <script src="index.js"></script>
+</body>
+</html>
